@@ -31,7 +31,7 @@ lazy val root = (project in file("."))
       "org.scalameta" %% "munit" % MunitVersion % Test,
       "org.typelevel" %% "munit-cats-effect-3" % MunitCatsEffectVersion % Test
     ),
-    Test/ run / fork := true,
+    Test / run / fork := true,
     testFrameworks += new TestFramework("munit.Framework")
   )
 
